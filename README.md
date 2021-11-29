@@ -198,12 +198,19 @@ int main()
 }
 
 qsotr - 快速排序 库函数 头文件#include<stdlib.h>
+
 任意类型数据
+
 void qsort(void* base, //base中存放的是待排序数据中第一个对象的地址
+
 	       size_t num, //排序数据元素的个数
+	       
 	       size_t size,//排序数据中一个元素的大小，单位是字节
+	       
 	       int (*cmp)(const void*, const void*)//函数指针 用来比较待排序数据中的两个元素的函数
+	       
            );
+	   
 #include<stdlib.h>
 #include<string.h>
 int cmp_int(const void* e1, const void* e2)
